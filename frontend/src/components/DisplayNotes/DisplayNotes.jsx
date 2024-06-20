@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { styles } from "./DisplayNotes.module.css";
+import styles from "./DisplayNotes.module.css";
 
 export const DisplayNotes = () => {
   const [recentGratitudes, setRecentGratitudes] = useState([]);
@@ -35,7 +35,7 @@ export const DisplayNotes = () => {
   return (
     <div>
       <p>recent posts</p>
-      <ul className={gratitudeContainer}>
+      <ul className={styles.gratitudeContainer}>
         {recentGratitudes.map((recentGratitude) => (
           <li className={styles.gratitudeBox} key={recentGratitude._id}>
             {recentGratitude.message}
