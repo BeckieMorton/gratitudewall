@@ -1,17 +1,16 @@
-import { useState } from "react";
-import { BrowserRouter, NavLink, Routes } from "react-router-dom";
-
-// import routes from "./routes/routes";
+import React from "react";
+import { Header } from "./components/Header/Header";
+import { PostNote } from "./components/PostNote/PostNote";
+import { DisplayNotes } from "./components/DisplayNotes/DisplayNotes";
+import { Footer } from "./components/Footer/Footer";
 
 export const App = () => {
   return (
-    <>
-      {/* <BrowserRouter>
-        <main>
-          <Routes>{routes}</Routes>
-        </main>
-      </BrowserRouter> */}
-      <p>this is in App</p>
-    </>
+    <div>
+      <Header />
+      <PostNote />
+      <DisplayNotes />
+      <Footer />
+    </div>
   );
 };
